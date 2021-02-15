@@ -1,0 +1,14 @@
+<h4>
+  list of users
+</h4>
+<pagination [totalItems]="info.total" [itemsPerPage]="info.per_page"
+(pageChanged)="pageChanged($event)"></pagination>
+
+
+<div class="input-group mb-3">
+  <input [ngModel]="searchtext" (ngModelChange)="gosearch($event)"
+   type="text" class="form-control" placeholder="User name" aria-label="username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+</div>

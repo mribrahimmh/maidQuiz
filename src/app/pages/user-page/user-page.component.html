@@ -1,0 +1,19 @@
+<div class="container  py-md-3 pl-md-5 bd-content">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">User</h4>
+      </div>
+      <div class="card-body">
+        <img [src]="user.avatar" class="img-fluid img-thumbnail" alt="...">
+        <h1 class="card-title pricing-card-title"><small class="text-muted">{{user.email}}</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li><strong>FULL Name :</strong>{{user.first_name}} {{user.last_name}} </li>
+          <li><strong>Id : </strong>{{user.id}}</li>
+        </ul>
+        <button (click)="goback()" type="button" class="btn btn-lg btn-block btn-primary">Go back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
